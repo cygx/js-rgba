@@ -133,9 +133,11 @@
         cv.width = width * scale;
         cv.height = height * scale;
 
-        var data = new ImageData(bytes, width, height);
         var ctx = cv.getContext('2d');
-        ctx.putImageData(scaleImageData(ctx, data, scale), 0, 0);
+        var imageData = ctx.createImageData(width, height);
+
+        imageData.data.set(bytes);
+        ctx.putImageData(scaleImageData(ctx, imageData, scale), 0, 0);
 
         var img = new Image(
             (width * scale * softScale) >> 0,
