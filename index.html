@@ -2,13 +2,14 @@
 <meta charset="utf-8">
 <title>Convert inline RGBA text data to PNG images</title>
 <style>
+body { background: #FFFBBB; }
 .rgba { white-space: pre; font-family: monospace; display: inline-block; }
 </style>
 <body>
 <p><button onclick="rgba_to_png()">convert images</button></p>
 <div><span class="rgba" title="basic colours"
- data-rgba-width="16"
- data-rgba-height="1"
+ data-rgba-width="8"
+ data-rgba-height="2"
  data-rgba-scale="20">
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 </span></div>
@@ -41,7 +42,7 @@
 <div><span class="rgba" title="glider"
  data-rgba-width="31"
  data-rgba-height="31"
- data-rgba-map=". 8 x 0 | 7 - 7 + 7">
+ data-rgba-map=". F x 0 | 7 - 7 + 7">
 + - - - - - - - - - + - - - - - - - - - + - - - - - - - - - +
 | . . . . . . . . . | . . . . . . . . . | . . . . . . . . . |
 | . . . . . . . . . | . . . x x x . . . | . . . . . . . . . |
