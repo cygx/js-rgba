@@ -8,13 +8,15 @@ body { background: #FFFBBB; }
 </style>
 <body>
 <p><button onclick="rgba_to_png()">convert images</button></p>
+
 <div><span class="rgba" title="basic colours"
  data-rgba-width="8"
  data-rgba-height="2"
  data-rgba-scale="20">
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 </span></div>
-<div><span class="rgba" title="FEEP (colour)"
+
+<div><span class="rgba" title="FEEP (basic)"
  data-rgba-width="24"
  data-rgba-height="7"
  data-rgba-scale="10"
@@ -27,6 +29,7 @@ body { background: #FFFBBB; }
 . 3 . . . . . 7 7 7 7 . . B B B B . . F . . . .
 . . . . . . . . . . . . . . . . . . . . . . . .
 </span></div>
+
 <div><span class="rgba" title="FEEP (grayscale)"
  data-rgba-width="24"
  data-rgba-height="7"
@@ -40,6 +43,21 @@ body { background: #FFFBBB; }
 .. 33 .. .. .. .. .. 77 77 77 77 .. .. BB BB BB BB .. .. FF .. .. .. ..
 .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
 </span></div>
+
+<div><span class="rgba" title="FEEP (rgb)"
+ data-rgba-width="24"
+ data-rgba-height="7"
+ data-rgba-scale="10"
+ data-rgba-map=".. 0">
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 333 355 377 399 000 000 828 848 868 888 000 000 3BB 5BB 7BB 9BB 000 000 FF9 FFB FFD FFF 000
+000 533 000 000 000 000 000 826 000 000 000 000 000 3B9 000 000 000 000 000 FD9 000 000 FDF 000
+000 733 755 377 000 000 000 824 844 864 000 000 000 3B7 5B7 7B7 000 000 000 FB9 FBB FBD FBF 000
+000 933 000 000 000 000 000 822 000 000 000 000 000 3B5 000 000 000 000 000 F99 000 000 000 000
+000 A33 000 000 000 000 000 820 840 860 880 000 000 3B3 5B3 7B3 9B3 000 000 F79 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+</span></div>
+
 <div><span class="rgba" title="glider"
  data-rgba-width="32"
  data-rgba-height="32"
